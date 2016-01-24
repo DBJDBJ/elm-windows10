@@ -1,4 +1,8 @@
-<!-- DOCTYPE HTML -->
+<!-- 
+    DOCTYPE HTML 
+
+    dbj 2016 01 24 HTA likes the "quirks mode" ... so far EML "runtime" does not dislike it.
+-->
 <html>
 <HTA:APPLICATION
   APPLICATIONNAME="dbj-hta-jamboree"
@@ -10836,11 +10840,11 @@ Elm.Main.make = function (_elm) {
 };</script></head>
     <body>
         <script type="text/javascript">
+            // dbj 2016 01 24 good old debugger statement still works. 
+            // AFAIK it is implemented in mshtml.dll 
+            // which (you guessed it) get's pulled in by mshta.exe
             debugger;
             Elm.fullscreen(Elm.Main);
-
         </script>
-
     </body>
-
 </html>
